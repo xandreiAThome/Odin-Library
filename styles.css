@@ -62,6 +62,53 @@ footer a {
   margin-left: 0.5rem;
   color: black;
 }
+
+dialog {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+dialog[open] {
+  animation: fadein 0.3s ease-in forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#bookForm input {
+  margin-bottom: 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  /* border-radius: 4px; */
+}
+
+#submit {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  border: none;
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#submit:hover {
+  background-color: #f7f7f6;
+}
 /*
 205781
 4F959D
