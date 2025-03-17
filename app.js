@@ -4,6 +4,7 @@ const addModal = document.getElementById("addModal");
 const addBookButton = document.getElementById("submit");
 const addButton = document.getElementById("add");
 const bookForm = document.getElementById("bookForm");
+const exitModal = document.getElementById("exit");
 
 class Book {
   constructor(name, author, pages, read) {
@@ -18,6 +19,10 @@ class Book {
     this.read = read;
   }
 }
+
+exitModal.onclick = () => {
+  addModal.close();
+};
 
 function displayBooks() {
   mainDiv.innerHTML = "";

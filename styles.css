@@ -96,6 +96,26 @@ dialog[open] {
   flex-direction: column;
   font-weight: 600;
   padding: 1rem 2rem 1rem 2rem;
+  position: relative;
+}
+
+#exit {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  border: none;
+  background-color: white;
+}
+
+#exit > svg {
+  height: 1rem;
+}
+
+#addModal {
+  position: relative;
 }
 
 #bookForm input {
