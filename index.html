@@ -26,20 +26,33 @@
           <path d="M5 12h14" />
           <path d="M12 5v14" />
         </svg>
+        Add Book
       </button>
     </header>
     <main></main>
     <dialog id="addModal">
       <form id="bookForm" onsubmit="return false">
         <label for="title">Title</label>
-        <input type="text" name="title" id="title" required />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          required
+          autocomplete="off"
+        />
         <label for="author">Author</label>
-        <input type="text" name="author" id="author" required />
+        <input
+          type="text"
+          name="author"
+          id="author"
+          required
+          autocomplete="off"
+        />
         <label for="pages">No. of Pages</label
-        ><input type="number" name="pages" id="pages" required />
+        ><input type="number" name="pages" id="pages" min="0" required />
         <div>
           <label for="read">Finished Reading?</label>
-          <input type="checkbox" name="read" id="read" checked />
+          <input type="checkbox" name="read" id="read" />
         </div>
         <button id="submit" type="submit">Add</button>
       </form>
